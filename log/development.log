@@ -663,3 +663,555 @@ Processing by Rails::PwaController#manifest as JSON
 Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-01-26 21:35:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | GC: 1.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 230.0ms | GC: 53.5ms)
+Completed 200 OK in 265ms (Views: 235.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 68.4ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 21:35:56 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/cable" for ::1 at 2025-01-26 21:36:10 +0200
+Started GET "/cable" [WebSocket] for ::1 at 2025-01-26 21:36:10 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/" for 127.0.0.1 at 2025-01-26 21:49:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 375.1ms | GC: 69.8ms)
+Completed 200 OK in 390ms (Views: 377.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 70.1ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 21:49:18 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.7ms | GC: 0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/cable" for ::1 at 2025-01-26 21:50:10 +0200
+Started GET "/cable" [WebSocket] for ::1 at 2025-01-26 21:50:10 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/" for 127.0.0.1 at 2025-01-26 21:50:25 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | GC: 7.0ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 21:50:25 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-26 21:50:26 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | GC: 1.8ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 21:50:26 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2025-01-26 21:54:12 +0200
+Started GET "/orders/491/edit" for ::1 at 2025-01-26 21:55:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/orders/491/edit"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:05:28 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:09:04 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:09:07 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:09:08 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:09:09 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:12:34 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-26 22:12:44 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-26 22:12:44 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | GC: 0.2ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.9ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | GC: 1.0ms)
+Completed 200 OK in 33ms (Views: 19.9ms | ActiveRecord: 6.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:12:44 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-26 22:12:50 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-26 22:12:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | GC: 0.8ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:12:50 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-26 22:13:00 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-26 22:13:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | GC: 2.8ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-26 22:13:00 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-01-26 22:13:11 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | GC: 0.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:13:12 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:13:16 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.8ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Eccom" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <main class="container mx-auto mt-28 px-5 flex">
+      <nav class="flex w-full">
+        <div class="w-64 p-4 h-screen bg-gray-600 sticky top-0">
+          <div class="flex">
+            <h1 class="text-md py-2 text-gray-50 font-bold hidden md:block">Ecomm Admin</h1>
+          </div>
+          <ul class="flex flex-grow text-gray-50">
+            <li>
+              <%= link_to admin_path, class: "px-4 py-2 hover:rounded hover:bg-gray-700"do%>
+                <% icon('fa-solid', 'gauge high') %>
+                <span class="hidden md:inline-block">Dashboard</span>
+              <%end%>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+    <%= yield %>
+  </body>
+</html>
+
+):
+
+Causes:
+ActiveSupport::SyntaxErrorProxy (/home/user/Документи/GitHub/eccom-platform/app/views/layouts/admin.html.erb:31: syntax error, unexpected ')'
+...r:rounded hover:bg-gray-700"do); @output_buffer.safe_append='
+...                              ^
+/home/user/Документи/GitHub/eccom-platform/app/views/layouts/admin.html.erb:34: syntax error, unexpected `end', expecting ')'
+'.freeze;              end
+                       ^~~
+/home/user/Документи/GitHub/eccom-platform/app/views/layouts/admin.html.erb:45: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+)
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title><%= content_for(:title) || "Eccom" %></title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <meta name="apple-mobile-web-app-capable" content="yes">
+7:        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+8:    
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:    
+12:        <%= yield :head %>
+13:    
+14:        <link rel="manifest" href="/manifest.json">
+15:        <link rel="icon" href="/icon.png" type="image/png">
+16:        <link rel="icon" href="/icon.svg" type="image/svg+xml">
+17:        <link rel="apple-touch-icon" href="/icon.png">
+18:        <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+19:        <%= javascript_importmap_tags %>
+20:      </head>
+21:    
+22:      <body>
+23:        <main class="container mx-auto mt-28 px-5 flex">
+24:          <nav class="flex w-full">
+25:            <div class="w-64 p-4 h-screen bg-gray-600 sticky top-0">
+26:              <div class="flex">
+27:                <h1 class="text-md py-2 text-gray-50 font-bold hidden md:block">Ecomm Admin</h1>
+28:              </div>
+29:              <ul class="flex flex-grow text-gray-50">
+30:                <li>
+31:                  <%= link_to admin_path, class: "px-4 py-2 hover:rounded hover:bg-gray-700"do%>
+32:                    <% icon('fa-solid', 'gauge high') %>
+33:                    <span class="hidden md:inline-block">Dashboard</span>
+34:                  <%end%>
+35:                </li>
+36:              </ul>
+37:            </div>
+38:          </nav>
+39:        </main>
+40:        <%= yield %>
+41:      </body>
+42:    </html>
+  
+app/views/layouts/admin.html.erb:31: syntax error, unexpected ')'
+app/views/layouts/admin.html.erb:34: syntax error, unexpected `end', expecting ')'
+app/views/layouts/admin.html.erb:45: syntax error, unexpected `end', expecting ')'
+Started GET "/admin" for ::1 at 2025-01-26 22:14:33 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 14.3ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:14:33 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:14:36 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.5ms | GC: 0.5ms)
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:14:38 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.7ms | GC: 0.4ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:14:42 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.1ms | GC: 0.1ms)
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admins/password/new" for 127.0.0.1 at 2025-01-26 22:17:33 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 5.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | GC: 0.8ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/admins/sign_up" for 127.0.0.1 at 2025-01-26 22:17:33 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | GC: 3.2ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:20:34 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 28.8ms | GC: 5.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 5.4ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.
+):
+
+Causes:
+Sprockets::Rails::Helper::AssetNotFound (The asset "logo.png" is not present in the asset pipeline.
+)
+    24:     <div class="flex w-full">
+    25:       <nav class="w-64 p-4 h-screen bg-gray-600 sticky top-0">
+    26:         <div class="flex">
+    27:           <%= image_tag 'logo.png', class: "w-16" %>
+    28:           <h1 class="text-md py-2 text-white font-bold hidden md:block">Ecomm Admin</h1>
+    29:         </div>
+    30:         <ul class="flex flex-col text-white">
+  
+app/views/layouts/admin.html.erb:27
+Started GET "/admin" for ::1 at 2025-01-26 22:21:15 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 150.8ms | GC: 20.3ms)
+Completed 200 OK in 157ms (Views: 151.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 20.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:21:15 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:22:34 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 18.1ms | GC: 4.9ms)
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:22:34 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:23:28 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:35:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 96.7ms | GC: 12.4ms)
+Completed 200 OK in 130ms (Views: 99.5ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 13.6ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:35:30 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:35:31 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 14.3ms | GC: 0.5ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:35:31 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:35:32 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 3.0ms | GC: 0.1ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:35:32 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: gastroli2.eu.ngrok.io, gastroli2.eu.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: gastroli2.eu.ngrok.io, gastroli2.eu.ngrok.io
+Started GET "/admin" for ::1 at 2025-01-26 22:38:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 253.4ms | GC: 44.0ms)
+Completed 200 OK in 299ms (Views: 254.3ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 44.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-26 22:38:54 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:39:02 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.4ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:42:26 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 2.5ms | GC: 0.1ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-26 22:43:52 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.1ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+

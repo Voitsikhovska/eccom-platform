@@ -3002,3 +3002,465 @@ Processing by Admin::CategoriesController#edit as HTML
 Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.3ms)
 
 
+Started GET "/admin" for ::1 at 2025-01-28 13:47:54 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (5.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 8.1ms | GC: 0.6ms)
+Completed 200 OK in 22ms (Views: 8.6ms | ActiveRecord: 5.1ms (1 query, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-28 20:34:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | GC: 11.4ms)
+Completed 200 OK in 114ms (Views: 103.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.7ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-28 20:34:57 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-28 20:35:01 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | GC: 4.5ms)
+Completed 200 OK in 28ms (Views: 18.1ms | ActiveRecord: 1.1ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-28 20:35:01 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:04 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.8ms)
+Completed 200 OK in 204ms (Views: 9.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:05 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | GC: 0.6ms)
+Completed 200 OK in 219ms (Views: 8.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-28 20:35:11 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | GC: 4.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.5ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2025-01-28 20:35:14 +0200
+Processing by Admin::CategoriesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | GC: 1.5ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-28 20:35:14 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:19 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.5ms)
+Completed 200 OK in 219ms (Views: 8.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/admins/sign_up" for 127.0.0.1 at 2025-01-28 20:35:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | GC: 2.2ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/admins/password/new" for 127.0.0.1 at 2025-01-28 20:35:26 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | GC: 0.6ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/admins/sign_up" for 127.0.0.1 at 2025-01-28 20:35:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2025-01-28 20:35:31 +0200
+Processing by AdminController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-01-28 20:35:32 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:42 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 1.2ms)
+Completed 200 OK in 218ms (Views: 8.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2025-01-28 20:35:43 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.2ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.7ms)
+Completed 200 OK in 220ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/admins/sign_up" for 127.0.0.1 at 2025-01-28 20:35:45 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | GC: 0.9ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/admins/password/new" for 127.0.0.1 at 2025-01-28 20:35:46 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/user/.rvm/gems/ruby-3.2.2/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 1.9ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/" for ::1 at 2025-01-28 20:35:55 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.9ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-28 20:35:56 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2025-01-28 20:36:02 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:29
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 13.0ms | GC: 0.5ms)
+  Rendered layout layouts/admin.html.erb (Duration: 13.4ms | GC: 0.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<Category id: 2, name: "Category 2", description: "test", created_at: "2025-01-27 20:57:55.568178000 +0000", updated_at: "2025-01-27 20:57:55.568178000 +0000">):
+
+Causes:
+NoMethodError (undefined method `image' for #<Category id: 2, name: "Category 2", description: "test", created_at: "2025-01-27 20:57:55.568178000 +0000", updated_at: "2025-01-27 20:57:55.568178000 +0000">)
+    29:             <% @admin_categories.each do |c| %>
+    30:               <tr class="bg-gray-50 border-b">
+    31:                 <td class="px-6 py-4 whitepsace-nowrap tex-sm font-medium text-gray-800 underline">
+    32:                   <%= c.image.present? ? image_tag(c.image.variant(:thumb)) : image_tag("https://via.placeholder.com/50") %>
+    33:                 </td>
+    34:                 <td class="px-6 py-4 whitepsace-nowrap tex-sm font-medium text-gray-800 underline">
+    35:                   <%= link_to c.name, edit_admin_category_path(c) %>
+  
+app/views/admin/categories/index.html.erb:32
+app/views/admin/categories/index.html.erb:29
+Started GET "/admin/categories" for ::1 at 2025-01-28 20:36:12 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:29
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 4.8ms | GC: 0.1ms)
+  Rendered layout layouts/admin.html.erb (Duration: 20.7ms | GC: 2.2ms)
+Completed 200 OK in 31ms (Views: 21.1ms | ActiveRecord: 1.4ms (2 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-28 20:36:12 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin/categories/2/edit" for ::1 at 2025-01-28 20:36:14 +0200
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/categories_controller.rb:63:in `set_admin_category'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/edit.html.erb within layouts/admin
+  Rendered admin/categories/_form.html.erb (Duration: 2.4ms | GC: 0.2ms)
+  Rendered admin/categories/edit.html.erb within layouts/admin (Duration: 3.1ms | GC: 0.2ms)
+  Rendered layout layouts/admin.html.erb (Duration: 5.3ms | GC: 0.3ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/admin/categories/2/edit" for ::1 at 2025-01-28 20:36:15 +0200
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/categories_controller.rb:63:in `set_admin_category'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/edit.html.erb within layouts/admin
+  Rendered admin/categories/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered admin/categories/edit.html.erb within layouts/admin (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 7.3ms | GC: 0.2ms)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admin/categories/5/edit" for ::1 at 2025-01-28 20:36:16 +0200
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/categories_controller.rb:63:in `set_admin_category'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/edit.html.erb within layouts/admin
+  Rendered admin/categories/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered admin/categories/edit.html.erb within layouts/admin (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 7.4ms | GC: 0.3ms)
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/admin/categories/2/edit" for ::1 at 2025-01-28 20:36:58 +0200
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/categories_controller.rb:63:in `set_admin_category'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/edit.html.erb within layouts/admin
+  Rendered admin/categories/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered admin/categories/edit.html.erb within layouts/admin (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 7.2ms | GC: 0.1ms)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admin/categories.2" for ::1 at 2025-01-28 20:37:00 +0200
+Processing by Admin::CategoriesController#index as */*
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:29
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 6.6ms | GC: 0.2ms)
+Completed 200 OK in 21ms (Views: 7.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/admin/categories/2/edit" for ::1 at 2025-01-28 20:37:43 +0200
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/categories_controller.rb:63:in `set_admin_category'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/edit.html.erb within layouts/admin
+  Rendered admin/categories/_form.html.erb (Duration: 1.6ms | GC: 0.1ms)
+  Rendered admin/categories/edit.html.erb within layouts/admin (Duration: 2.3ms | GC: 0.1ms)
+  Rendered layout layouts/admin.html.erb (Duration: 19.3ms | GC: 3.7ms)
+Completed 200 OK in 32ms (Views: 20.2ms | ActiveRecord: 1.3ms (2 queries, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-28 20:37:43 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.8ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/admin/categories" for ::1 at 2025-01-28 20:37:44 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:29
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.0ms | GC: 0.3ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/admin/categories" for ::1 at 2025-01-28 20:37:45 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:29
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 3.7ms | GC: 0.2ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2025-01-28 20:37:58 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/admin/categories/index.html.erb:27
+  Rendered admin/categories/index.html.erb within layouts/admin (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 22.2ms | GC: 4.8ms)
+Completed 200 OK in 31ms (Views: 22.5ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 5.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-01-28 20:37:58 +0200
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-28 20:38:01 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.7ms | GC: 0.2ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/admin" for ::1 at 2025-01-28 20:38:02 +0200
+Processing by AdminController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/index.html.erb within layouts/admin (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/admin.html.erb (Duration: 4.9ms | GC: 0.7ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
